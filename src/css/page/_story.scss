@@ -1,0 +1,94 @@
+.story__heading {
+  background-image: url(../../img/story-single1.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: black;
+  background-position: bottom 0 left 0;
+  padding: 20px 0 63px 0;
+  @include mq("sp") {
+    background-size: cover;
+    background-position: center center;
+  }
+  .top2-inner {
+    margin-top: 40px;
+  }
+}
+.story__heading__inner {
+}
+.story__heading {
+  .breadcrumb {
+    color: #fff;
+    span {
+      color: #fff;
+    }
+  }
+}
+.story__heading {
+  .top2-button {
+    margin-top: 40px;
+  }
+}
+.util-ttl._story {
+  color: #fff;
+  margin-top: 20px;
+}
+.story__heading__wrapper {
+  display: flex;
+  margin-top: 54px;
+  position: relative;
+  @include mq("sp") {
+    display: block;
+  }
+}
+.story__heading__title {
+  color: #fff;
+  font-size: 26px;
+  flex: 0 0 50%;
+  @include mq("sp") {
+    margin: 0 auto;
+  }
+}
+.story__heading__text {
+  color: #fff;
+  flex: 0 0 50%;
+  font-size: 12px;
+  line-height: 1.9;
+  @include mq("sp") {
+    margin: 30px auto 0;
+  }
+}
+
+// 各セクション
+.story__main__wrapper {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  &:nth-child(1) {
+    background-position: top 13% right 0;
+  }
+  &:nth-child(2) {
+    background-position: top 50% left 0;
+  }
+  &:nth-child(3) {
+    background-position: top 50% right 0;
+  }
+  @include mq("sp") {
+    background-size: 100%;
+  }
+}
+.story__main__text {
+  font-size: 12px;
+  color: #fff;
+  width: 50%;
+  padding: 60px 0;
+  line-height: 1.8;
+  @include mq("sp") {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.story__main__wrapper {
+  &:nth-child(even) .story__main__text {
+    margin-left: auto;
+  }
+}

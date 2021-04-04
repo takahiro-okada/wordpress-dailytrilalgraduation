@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- langを指定して、「日本語」サイトであることを明治 -->
+<html lang="ja">
+
+<head>
+  <!-- 文字コードは「UTF-８」を指定　※UTFは基本的にどのブラウザで指定しても綺麗に見える -->
+  <meta charset="UTF-8">
+  <!-- スマホやタブレットで表示するためのレスポンシブ表示をするための記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- サイトのアイコンを設定 -->
+  <link rel="icon" href="favicon.ico">
+  <!-- サイトの上に表示されるタイトルが出てくる -->
+  <title>デイトラ卒業制作[デザインの書き出しからWordPress化まで]</title>
+  <!-- サイトの概要を記述する。 -->
+  <meta name="description" content="卒業制作課題">
+  <!-- スタイルシートやCDN(外部から読み込む形式のcss)も<head>タグに記述する -->
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+    media="screen and (max-width:810px)">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <!-- fontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- wow -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <script src="./js/wow.min.js"></script>
+  <!-- original -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+</head>
+
+<body class="drawer drawer--right">
+  <div class="wrap">
+    <header id="js-header" class="header">
+      <div class="header-inner inner">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav header-nav">
+          <ul class="drawer-menu header-list">
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#top"><span>トップ</span>TOP</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#news"><span>ニュース</span>NEWS</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#story"><span>ストーリ</span>STORY</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#comments"><span>著名人コメント</span>COMMENTS</a>
+            </li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#cast"><span>キャスト</span>CAST</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#inquiry"><span>お問い合わせ</span>INQUIRY</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.header-inner -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+      <section class="top2" id="top">
+        <div class="top2-inner wow fadeIn">
+          <h1 class="top2-header"><img src="./img/topttl.png" alt="完全版マハーバーラタ"></h1><!-- /.top-header -->
+          <div class="top2-footer">
+            <img src="./img/topsub.png" alt="">
+          </div><!-- /.top-footer -->
+        </div><!-- /.top-inner -->
+      </section>
+      <!-- /.top -->
+      <div class="inner">
+        <div class="top2-button">
+          <a href="" class="util-button_big">チケット予約サイトへ</a>
+        </div><!-- /.top-button -->
+      </div><!-- /.inner -->
+
+      <div class="breadcrumb inner">
+        <span property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/" class="home"><span property="name">ホーム</span></a>
+          <meta property="position" content="1">
+        </span>
+        <i class="fas fa-angle-right"></i>
+        <span class="current-item">news</span>
+      </div><!-- /breadcrumb -->
+
+      <section class="cast" id="cast">
+        <div class="cast-bg">
+          <div class="cast-inner inner">
+            <h2 class="cast-ttl util-ttl">CASTS</h2><!-- /.cast-ttl -->
+            <div class="cast-wrapper">
+              <div class="cast-body">
+                <div class="cast-body-img">
+                  <img width="220" height="220" src="./img/cast-1.png" alt="小池博史">
+                </div><!-- /.cast-body-img -->
+                <div class="cast-body-name">
+                  作・演出・振付・構成
+                  <span class="cast-body-name-Big">小池博史</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-body-txt">
+                  茨城県日立市出身。一橋大学卒業。 演出家・作家・振付家・舞台美術家・写真家、舞台芸術の学校（P.A.I.）校長。 1982年「パパ・タラフマラ」設立。
+                  演劇、舞踊、オペラ、美術、建築等、ジャンルを縦横に渡りながら空間を築き上げてゆく手法で、国際的に高い評価を確立。
+                  3.11を受けて、翌2012年5月にパパ・タラフマラ解散。すぐに「小池博史ブリッジプロジェクト」を立ち上げ、作品を創作しながら、若手表現者の育成と芸術文化事業のプロデュースを手掛けるなど、活動は多岐に渡る。
+                  著書に「ロンググッドバイ～パパ・タラフマラとその時代」（青幻舎刊）、「からだのこえをきく」（新潮社刊）等。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+
+              <div class="cast-body">
+                <div class="cast-body-img">
+                  <img width="220" height="220" src="./img/cast-2.png" alt="白井さち子">
+                </div><!-- /.cast-body-img -->
+                <div class="cast-body-name">
+                  出演 <span class="cast-body-name-Big">白井さち子</span>
+                  <span class="cast-body-name-Small">(バレエ、コンテンポラリーダンス)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-body-txt">
+                  7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。 89年よりパパ・タラフマラに参加。
+                  以降国内外の公演に出演。 後身のパフォーマーのダンス指導にもあっている。 パパ・タラフマラ作品「シンデレラ」においてシンデレラ役、「三人姉妹」次女役、「パパ・タラフマラの白雪姫」継母役などを好演。
+                  これまで約35カ国での公演に参加、そのパフォーマンスは世界各地で認められ、高く評価されている。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+
+              <div class="cast-body">
+                <div class="cast-body-img">
+                  <img width="220" height="220" src="./img/cast3.png" alt="小谷野哲郎">
+                </div><!-- /.cast-body-img -->
+                <div class="cast-body-name">
+                  出演
+                  <span class="cast-body-name-Big">小谷野哲郎</span>
+                  <span class="cast-body-name-Small">(バリ舞踏)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-body-txt">
+                  東海大学音楽学課程在学中よりサウンドスケープ研究の傍らバリ舞踊を始める。 1995年よりインドネシア政府給費留学生としてインドネシア国立芸術高等学院に留学。
+                  学外でも現代バリ舞踊界最高の舞踊家達に師事し、舞踊技術と同時に精神的哲学的影響も強く受ける。 2006年、Asian Cultural Councilの助成によりアメリカに滞在。
+                  パパ・タラフマラ作品では「ガリバー＆スウィフト」「パンク・ドンキホーテ」「白雪姫」に、小池博史ブリッジプロジェクトでは「注文の多い料理店」「風の又三郎」に出演。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+            </div><!-- /.cast-wrapper -->
+            <div class="cast-button">
+              <a href="" class="util-button_small">もっと見る</a>
+            </div><!-- /.cast-button -->
+          </div><!-- /.cast-inner -->
+        </div><!-- /.cast-bg -->
+      </section>
+      <!-- /.cast -->
+
+      <section class="cast-single">
+        <div class="cast-inner inner">
+          <div class="cast-single-wrapper">
+            <div class="cast-single-body">
+              <div class="cast-body-img">
+                <img width="130" height="130" src="./img/cast-2.png" alt="白井さち子">
+              </div><!-- /.cast-body-img -->
+              <div class="cast-single-txt">
+                <div class="cast-single-body-name">
+                  出演 <span class="cast-single-body-name-Big">白井さち子</span>
+                  <span class="cast-single-body-name-Small">(バレエ、コンテンポラリーダンス)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-single-body-txt">
+                  7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+            </div><!-- /.cast-single-body -->
+            <div class="cast-single-body">
+              <div class="cast-body-img">
+                <img width="130" height="130" src="./img/cast-2.png" alt="白井さち子">
+              </div><!-- /.cast-body-img -->
+              <div class="cast-single-txt">
+                <div class="cast-single-body-name">
+                  出演 <span class="cast-single-body-name-Big">白井さち子</span>
+                  <span class="cast-single-body-name-Small">(バレエ、コンテンポラリーダンス)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-single-body-txt">
+                  7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+            </div><!-- /.cast-single-body -->
+            <div class="cast-single-body">
+              <div class="cast-body-img">
+                <img width="130" height="130" src="./img/cast-2.png" alt="白井さち子">
+              </div><!-- /.cast-body-img -->
+              <div class="cast-single-txt">
+                <div class="cast-single-body-name">
+                  出演 <span class="cast-single-body-name-Big">白井さち子</span>
+                  <span class="cast-single-body-name-Small">(バレエ、コンテンポラリーダンス)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-single-body-txt">
+                  7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+            </div><!-- /.cast-single-body -->
+            <div class="cast-single-body">
+              <div class="cast-body-img">
+                <img width="130" height="130" src="./img/cast-2.png" alt="白井さち子">
+              </div><!-- /.cast-body-img -->
+              <div class="cast-single-txt">
+                <div class="cast-single-body-name">
+                  出演 <span class="cast-single-body-name-Big">白井さち子</span>
+                  <span class="cast-single-body-name-Small">(バレエ、コンテンポラリーダンス)</span>
+                </div><!-- /.cast-body-name -->
+                <p class="cast-single-body-txt">
+                  7歳よりクラシックバレエを始める。 82年より6年間橘バレエ学校に在籍。 牧阿佐美に師事。 日本女子体育短期大学舞踊コース卒。 在籍中、太田順造にパントマイムを師事。
+                </p><!-- /.cast-body-txt -->
+              </div><!-- /.cast-body -->
+            </div><!-- /.cast-single-body -->
+            
+          </div><!-- /.cast-single-wrapper -->
+        </div><!-- /.cast-inner -->
+      </section><!-- /.cast-single -->
+
+      <section class="cast-singleList">
+        <div class="cast-singleList-inner inner">
+          <div class="cast-singleList-wrapper">
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+            <div class="cast-singleList-body">
+              <div class="cast-body-name">
+                作・演出・振付・構成
+                <span class="cast-body-name-Big">小池博史</span>
+              </div><!-- /.cast-body-name -->
+            </div><!-- /.cast-body -->
+
+          </div><!-- /.cast-wrapper -->
+        </div><!-- /.cast-singleList-inner -->
+      </section><!-- /.cast-singleList -->
+
+      <section class="schedule" id="schedule">
+        <div class="schedule-inner inner">
+          <div class="schedule-wrapper">
+            <h2 class="schedule-ttl util-ttl">SCHEDULE</h2><!-- /.schedule-ttl -->
+            <div class="schedule-list">
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-04">2020.07.04</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-05">2020.07.05</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-06">2020.07.06</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-07">2020.07.07</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+            </div><!-- /.schedule-list -->
+          </div><!-- /.schedule-footer -->
+        </div><!-- /.schedule-wrapper -->
+        <div class="schedule-footer">
+          <div class="schedule-button-left">
+            <a href="" class="util-button_big">お問い合わせはこちら</a>
+          </div><!-- /.schedule-button -->
+          <div class="schedule-button-right">
+            <a href="" class="util-button_big">チケット予約サイトへ</a>
+          </div><!-- /.schedule-button -->
+        </div><!-- /.schedule-inner -->
+      </section><!-- /.schedule -->
+
+      <footer class="footer">
+        <div class="footer-copy-right">Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</div><!-- /.copy-right -->
+      </footer><!-- /.footer -->
+
+    </main>
+  </div><!-- /.wrap -->
+</body>
+
+</html>

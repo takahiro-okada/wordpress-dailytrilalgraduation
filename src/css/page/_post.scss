@@ -1,0 +1,158 @@
+.news2 {
+  margin-top: 24px;
+}
+.news-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.news-item2 {
+  width: calc(33.3333% - (30px * 2 / 3));
+  margin-top: 20px;
+  flex-wrap: wrap;
+  background: #fff;
+  display: block;
+  @include mq("pc") {
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 30px;
+    }
+  }
+  @include mq("sp") {
+    width: 80%;
+    margin: 30px auto 0;
+  }
+}
+.news-card-pic2 {
+  overflow: hidden;
+  @include mq("pc") {
+    img {
+      width: 250px;
+      height: 140px;
+      transform: scale(1);
+      object-fit: cover;
+      transition: transform 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.news-body2 {
+  padding: 16px;
+}
+.news-date2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+}
+.news-disc2 {
+  color: #666;
+  font-weight: 700;
+}
+
+.news-single {
+  margin-top: 30px;
+}
+.news-single-wrapper {
+  margin-top: 34px;
+}
+.news-single-pic {
+  padding-top: calc(1156 / 1620 * 100);
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.news-single-heading {
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 14px 30px;
+}
+.news-single-time {
+  font-size: 12px;
+}
+.news-single-heading-ttl {
+  font-size: 26px;
+  @include mq("sp") {
+    font-size: 20px;
+  }
+}
+.news-single-body {
+  padding: 30px;
+  background: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: calc(26 / 16);
+  }
+}
+
+.link-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.link-text-wrap {
+  width: 80%;
+}
+.link-date {
+  font-size: 12px;
+}
+.previous-page {
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+.next-page {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.link-circle-previous {
+  margin-right: 1rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  text-align: center;
+  line-height: 2rem;
+  i {
+    color: #f4d102;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+  @include mq() {
+    width: 34px;
+    height: 30px;
+  }
+}
+
+.link-circle-next {
+  margin-left: 1rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  text-align: center;
+  line-height: 2rem;
+  i {
+    color: #f4d102;
+    margin-top: 8px;
+    margin-right: -3px;
+  }
+  @include mq("sp") {
+    width: 34px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- langを指定して、「日本語」サイトであることを明治 -->
+<html lang="ja">
+
+<head>
+  <!-- 文字コードは「UTF-８」を指定　※UTFは基本的にどのブラウザで指定しても綺麗に見える -->
+  <meta charset="UTF-8">
+  <!-- スマホやタブレットで表示するためのレスポンシブ表示をするための記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- サイトのアイコンを設定 -->
+  <link rel="icon" href="favicon.ico">
+  <!-- サイトの上に表示されるタイトルが出てくる -->
+  <title>デイトラ卒業制作[デザインの書き出しからWordPress化まで]</title>
+  <!-- サイトの概要を記述する。 -->
+  <meta name="description" content="卒業制作課題">
+  <!-- スタイルシートやCDN(外部から読み込む形式のcss)も<head>タグに記述する -->
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+    media="screen and (max-width:810px)">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <!-- fontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- wow -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <script src="./js/wow.min.js"></script>
+  <!-- original -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+</head>
+
+<body class="drawer drawer--right">
+  <div class="wrap">
+    <header id="js-header" class="header">
+      <div class="header-inner inner">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav header-nav">
+          <ul class="drawer-menu header-list">
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#top"><span>トップ</span>TOP</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#news"><span>ニュース</span>NEWS</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#story"><span>ストーリ</span>STORY</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#comments"><span>著名人コメント</span>COMMENTS</a>
+            </li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#cast"><span>キャスト</span>CAST</a></li>
+            <li class="header-nav-item"><a class="header-nav-itemLink" href="#inquiry"><span>お問い合わせ</span>INQUIRY</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.header-inner -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+      <section class="top2" id="top">
+        <div class="top2-inner wow fadeIn">
+          <h1 class="top2-header"><img src="./img/topttl.png" alt="完全版マハーバーラタ"></h1><!-- /.top-header -->
+          <div class="top2-footer">
+            <img src="./img/topsub.png" alt="">
+          </div><!-- /.top-footer -->
+        </div><!-- /.top-inner -->
+      </section>
+      <!-- /.top -->
+      <div class="inner">
+        <div class="top2-button">
+          <a href="" class="util-button_big">チケット予約サイトへ</a>
+        </div><!-- /.top-button -->
+      </div><!-- /.inner -->
+
+      <div class="breadcrumb inner">
+        <span property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/" class="home"><span property="name">ホーム</span></a>
+          <meta property="position" content="1">
+        </span>
+        <i class="fas fa-angle-right"></i>
+        <span class="current-item">news</span>
+      </div><!-- /breadcrumb -->
+
+      <section class="inquiry">
+        <div class="inquiry-inner inner">
+          <h2 class="util-ttl">INQUIRY</h2>
+          <div class="inquiry-container">
+            <div class="inquiry-header">
+              <p class="inquiry-txt">小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。 公演に関するお問い合わせ、公演・ワークショップのご依頼など、 お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。</p>
+            </div><!-- /.inquiry-header -->
+            <div class="inquiry-content">
+              <form action="post" class="" id="js-form">
+                <dl class="inquiry-list">
+                  <div class="inquiry-item">
+                    <dt class="inquiry-item-ttl">お名前</dt>
+                    <dd class="inquiry-item-input">
+                      <input type="text">
+                    </dd>
+                  </div><!-- /.inquiry-item -->
+                  <div class="inquiry-item">
+                    <dt class="inquiry-item-ttl">電話番号</dt>
+                    <dd class="inquiry-item-input">
+                      <input type="tel">
+                    </dd>
+                  </div><!-- /.inquiry-item -->
+                  <div class="inquiry-item">
+                    <dt class="inquiry-item-ttl">メールアドレス</dt>
+                      <dd class="inquiry-item-input"><input type="email"></dd>
+                  </div><!-- /.inquiry-item -->
+                  <div class="inquiry-item">
+                    <dt class="inquiry-item-ttl">内容</dt>
+                    <dd class="inquiry-item-input">
+                      <textarea name=""></textarea>
+                    </dd>
+                  </div><!-- /.inquiry-item -->
+                </dl><!-- /.inquiry-list -->
+              </form>
+            </div><!-- /.inquiry-content -->
+
+          </div><!-- /.inquiry-container -->
+        </div><!-- /.inquiry-inner -->
+      </section><!-- /.inquiry -->
+
+      <section class="schedule" id="schedule">
+        <div class="schedule-inner inner">
+          <div class="schedule-wrapper">
+            <h2 class="schedule-ttl util-ttl">SCHEDULE</h2><!-- /.schedule-ttl -->
+            <div class="schedule-list">
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-04">2020.07.04</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-05">2020.07.05</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-06">2020.07.06</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+              <div class="schedule-item">
+                <div class="schedule-info-meta">
+                  <time class="schedule-info--published" datetime="2020-07-07">2020.07.07</time>
+                  <div class="schedule-info-open">17:00開演</div>
+                  <div class="schedule-info-place">中野ZERO大ホール</div>
+                  <div class="schedule-info-link"><a href="">チケット予約受付中</a></div>
+                </div><!-- /.schedule-info -->
+              </div><!-- /.schedule-item -->
+            </div><!-- /.schedule-list -->
+          </div><!-- /.schedule-footer -->
+        </div><!-- /.schedule-wrapper -->
+        <div class="schedule-footer">
+          <div class="schedule-button-left">
+            <a href="" class="util-button_big">お問い合わせはこちら</a>
+          </div><!-- /.schedule-button -->
+          <div class="schedule-button-right">
+            <a href="" class="util-button_big">チケット予約サイトへ</a>
+          </div><!-- /.schedule-button -->
+        </div><!-- /.schedule-inner -->
+      </section><!-- /.schedule -->
+
+      <footer class="footer">
+        <div class="footer-copy-right">Copyright © 2019 完全版マハーバーラタ All Rights Reserved.</div><!-- /.copy-right -->
+      </footer><!-- /.footer -->
+
+    </main>
+  </div><!-- /.wrap -->
+</body>
+
+</html>

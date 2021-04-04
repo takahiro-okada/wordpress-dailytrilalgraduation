@@ -1,0 +1,50 @@
+.header {
+  height: 90px;
+  @include mq("sp") {
+    height: 70px;
+  }
+}
+.inner {
+  height: inherit;
+  @include mq("sp") {
+    display: block;
+  }
+}
+.header-logo {
+  margin-bottom: 8px;
+  text-align: center;
+  a {
+    font-size: 26px;
+  }
+}
+.header-sub {
+  font-size: 10px;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  white-space: nowrap;
+  overflow: scroll;
+  li {
+    font-size: 12px;
+    line-height: calc(35.87 / 22);
+    text-align: center;
+    a {
+      color: #333;
+    }
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  span {
+    // font-family: open-sans, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}

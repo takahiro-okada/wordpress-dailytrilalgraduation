@@ -1,0 +1,27 @@
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  color: #1a1a1a;
+  background-color: transparent;
+  padding: 10px;
+  white-space: nowrap;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #1a1a1a;
+  margin-right: 9px;
+}
+.wp-pagenavi a:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+.wp-pagenavi span.current {
+  color: #fff;
+  background-color: #1a1a1a;
+}

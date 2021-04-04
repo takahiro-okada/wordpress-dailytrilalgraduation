@@ -1,0 +1,128 @@
+.cast-single {
+  margin-top: 63px;
+  margin-bottom: 17px;
+}
+// 2段目
+.cast-single-wrapper-top {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq("sp") {
+    display: block;
+  }
+}
+.cast__middle__body {
+  margin-left: 10px;
+}
+.cast-single-body-top {
+  width: calc(50% - 45px);
+  display: flex;
+  @include mq("pc") {
+    &:nth-child(2n) {
+      margin-left: 60px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 18px;
+    }
+  }
+  @include mq("sp") {
+    width: 100%;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+}
+.cast-single-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mq("sp") {
+    width: 80%;
+    margin: 24px auto 0;
+    display: block;
+  }
+}
+.cast-single-body {
+  @include mq("pc") {
+    display: flex;
+    width: calc(33.3333% - 60px);
+    margin-left: 30px;
+    &:nth-child(3 + n) {
+      margin-top: 30px;
+    }
+  }
+  @include mq("sp") {
+    display: block;
+    margin: 24px auto;
+  }
+}
+.cast-single-txt {
+  text-align: center;
+}
+.cast-single-body-img {
+  text-align: center;
+  img {
+    border-radius: 50%;
+  }
+}
+.cast-single-body-name {
+  display: initial;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 17px;
+  height: 80px;
+  color: #666;
+  @include mq("sp") {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-Big {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  &-Small {
+    display: block;
+    font-size: 12px;
+    color: #333;
+  }
+}
+.cast-single-body-txt {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.cast-single-button {
+  text-align: center;
+  margin-top: 15px;
+}
+// ３段目(文字だけ)
+.cast__single-bottom {
+  background: #ffffffe6;
+  padding: 75px 0;
+}
+.cast__single-bottom__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cast__single-bottom__body {
+  width: calc(33.3333% - 30px);
+  &:not(:nth-child(3n + 1)) {
+    margin-left: 30px;
+  }
+  &:nth-child(n + 4) {
+    margin-top: 53px;
+  }
+}
+.cast__single-bottom__position {
+  text-align: center;
+}
+.cast__single-bottom__name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.cast__single-bottom__job {
+  text-align: center;
+  font-size: 12px;
+}

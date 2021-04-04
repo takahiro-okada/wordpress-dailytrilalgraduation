@@ -1,0 +1,88 @@
+.util-ttl {
+  font-size: 43px;
+  font-weight: normal;
+  font-family: $font-family-english;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  line-height: 0.9;
+  @include mq("sp") {
+    font-size: 32px;
+  }
+}
+
+.util-button_big {
+  display: inline-block;
+  background: $color-buttonEm;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background-color 0.4s, color 0.4s;
+  &:hover {
+    background-color: #000;
+  }
+  @include mq("sp") {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+  }
+}
+.util-button_sub {
+  display: inline-block;
+  background: $color-buttonEm;
+  padding: 13px 15px;
+  font-size: 12px;
+  color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background-color 0.4s, color 0.4s;
+  &:hover {
+    background-color: #000;
+  }
+}
+.util-button_small {
+  display: inline-block;
+  background: $color-buttonEm;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin: 0 auto;
+  transition: background-color 0.4s, color 0.4s;
+  box-sizing: border-box;
+  &:hover {
+    background-color: #000;
+  }
+}
+.util-button_red {
+  display: inline-block;
+  background: transparent;
+  color: $color-buttonEm;
+  padding: 1px 16px;
+  border: 5px solid $color-buttonEm;
+  font-size: 14px;
+  margin: 0 auto;
+  transition: background-color 0.4s, color 0.4s;
+  box-sizing: border-box;
+  &:hover {
+    background-color: #000;
+  }
+}
+
+@include mq("pc") {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq("sp") {
+  .is-sp {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+//レイアウト幅
+$layout-width-inner: 810px;
+
+// 余白
+$padding-sp: 15px;
+
+// ブレイクポイント
+$breakpoints: (
+  "sp": "(max-width: 810px)",
+  "pc": "(min-width: 811px)",
+);

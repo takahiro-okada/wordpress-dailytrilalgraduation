@@ -1,0 +1,12 @@
+// adobeフォント
+@import url("https://use.typekit.net/ybf8bdj.css");
+
+// フォント
+$font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ",
+  meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
+$font-family-japanese: "Hiragino Kaku Gothic ProN", sans-serif; // 日本語フォント
+$font-family-english: "Futura-CondensedMedium"; // 英語フォント
+$font-family-base: $font-family-japanese;
+$font-size-base: 16px;
+$font-weight-base: 400;
+$line-height-base: 1.6;

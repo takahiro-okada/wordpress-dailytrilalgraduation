@@ -1,0 +1,12 @@
+.inner {
+  max-width: 810px;
+  margin: 0 auto;
+
+  @include mq("sp") {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}
+.wrap{
+  overflow: hidden;
+}
